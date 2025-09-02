@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="icon" href="cartpic.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="lap-nav">
+        <img src="ChatGPT Image Sep 1, 2025, 10_02_23 PM.png" alt="error">
+        <ul>
+            <label><input placeholder="Search">🔍</label>
+            <li><a class="ms-2" href="index.html">Home |</a></li>
+            <li><a href="about.html">About |</a></li>
+            <li><a href="contact.html">Contact |</a></li>
+            <li><a href="cart.html"><strong>Cart </strong>|</a></li>
+            <li><button type="button" class="btn btn-primary login-btn pt-0" data-bs-toggle="modal" data-bs-target="#loginModal">
+  Login
+</button></li>
+        </ul>
+    </nav>
+    <nav class="mob-nav">
+        <header>
+            <img src="ChatGPT Image Sep 1, 2025, 10_02_23 PM.png" alt="error" width="50x50">
+            <h1>FAIRY <span class="header">VOGUE</span></h1>
+        </header>
+        <ul class="mb-0">
+            <li><a class="mob-icon" href="index.html"><ion-icon name="home"></ion-icon></a></li>
+            <li><a class="mob-icon" href="#"><ion-icon name="search"></ion-icon></a></li>
+            <li><a class="mob-icon" href="about.html"><ion-icon name="business"></ion-icon></a></li>
+            <li><a class="mob-icon" href="contact.html"><ion-icon name="call"></ion-icon></a></li>
+            <li><a class="mob-icon" href="cart.html"><strong><ion-icon name="cart"></ion-icon></strong></a></li>
+            <li><a class="btn btn-primary login-btn pt-0" data-bs-toggle="modal" data-bs-target="#loginModal"><ion-icon
+                        name="person"></ion-icon></a></li>
+        </ul>
+    </nav>
+    <!-- ✅ Bootstrap Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-4 rounded-4 shadow-lg">
+
+                <!-- Modal Header -->
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" placeholder="Enter Your Name" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="Enter Your Email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" placeholder="Enter Your Password" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-purple w-100">Login</button>
+                    </form>
+
+                    <p class="mt-3 text-center">
+                        Don't have an account? <a class="text-decoration-underlined btn-register" data-bs-toggle="modal" data-bs-target="#registerModal">Register</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content p-3">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Create Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Put the Register Form here -->
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="Enter email">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" placeholder="Enter password">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" placeholder="Confirm password">
+                        </div>
+                        <button type="submit" class="btn btn-purple w-100">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        
+        <h2>Cart</h2>
+        <div class="cart-container">
+            <div class="cart-box">
+                <img src="product3.avif" alt="reload" width="100px" height="100px">
+                <div class="cart-details">
+                    <h4 class="h5">
+                        Baby Girl latest stylish frock
+                    </h4>
+                    <ul class="mb-0">
+                        <li><ion-icon name="star"></ion-icon></li>
+                        <li><ion-icon name="star"></ion-icon></li>
+                        <li><ion-icon name="star"></ion-icon></li>
+                        <li><ion-icon name="star"></ion-icon></li>
+                        <li><ion-icon name="star-half"></ion-icon></li>
+                        <li>4.1</li>
+                    </ul>
+                    <p class="buy mb-0">Buy at ₹299 save ₹85</p>
+                    <p class="free">Free delivery</p>
+                </div>
+                <div class="cart-size">
+                    <h3 class="h4">9-12 Months</h3>
+                </div>
+                <div class="circle" style="background-color: rgb(255, 199, 213);"></div>
+                <div class="cart-price">
+                    <p class="old mb-0">₹384 </p>
+                    <p class="new mb-0">₹299</p>
+                    <p class="offer">(22% off)</p>
+                </div>
+                <button type="button" class="delete pt-0">
+                    <ion-icon name="trash"></ion-icon>
+                </button>
+            </div>
+            <div class="cart-box">
+                <img src="product6.avif" alt="reload" width="100px" height="100px">
+                <div class="cart-details">
+                    <h4 class="h5">
+                        Trendy woof street-style woof oversized T-shirt
+                    </h4>
+                    <ul class="mb-0">
+                        <li><ion-icon name="star"></ion-icon></li>
+                        <li><ion-icon name="star"></ion-icon></li>
+                        <li><ion-icon name="star"></ion-icon></li>
+                        <li><ion-icon name="star"></ion-icon></li>
+                        <li><ion-icon name="star-half"></ion-icon></li>
+                        <li>4.3</li>
+                    </ul>
+                    <p class="buy mb-0">Buy at ₹799 save ₹102</p>
+                    <p class="free">Free delivery</p>
+                </div>
+                <div class="cart-size">
+                    <h3 class="h4">M</h3>
+                    <p>(Length: 40in)</p>
+                </div>
+                <div class="circle" style="background: linear-gradient(40deg, white, gray);"></div>
+                <div class="cart-price">
+                    <p class="old mb-0">₹601 </p>
+                    <p class="new mb-0">₹399</p>
+                    <p class="offer">(9% off)</p>
+                </div>
+                <button type="button" class="delete">
+                    <ion-icon name="trash"></ion-icon>
+                </button>
+            </div>
+            <div class="cart-box">
+                <img src="product5.avif" alt="reload" width="100px" height="100px">
+                <div class="cart-details">
+                    <h4 class="h5">
+                        Baby Girls' summer shorts sleeve tunic dress
+                    </h4>
+                    <ul class="mb-0">
+                        <li><ion-icon name="star"></ion-icon></li>
+                        <li><ion-icon name="star"></ion-icon></li>
+                        <li><ion-icon name="star"></ion-icon></li>
+                        <li><ion-icon name="star-half"></ion-icon></li>
+                        <li>3.8</li>
+                    </ul>
+                    <p class="buy mb-0">Buy at ₹799 save ₹102</p>
+                    <p class="free">Free delivery</p>
+                </div>
+                <div class="cart-size">
+                    <h3 class="h4">3-6 Months</h3>
+                </div>
+                <div class="circle" style="background: linear-gradient(90deg, wheat, black);"></div>
+                <div class="cart-price">
+                    <p class="old mb-0">₹601 </p>
+                    <p class="new mb-0">₹299</p>
+                    <p class="offer">(21% off)</p>
+                </div>
+                <button type="button" class="delete pt-0">
+                    <ion-icon name="trash"></ion-icon>
+                </button>
+            </div>
+            <div class="cart-box">
+                <img src="product9.avif" alt="reload" width="100px" height="100px">
+                <div class="cart-details">
+                    <h4 class="h5">
+                        Stylish Beige Mesh net skirt with Heart print
+                    </h4>
+                    <ul class="mb-0">
+                        <li><ion-icon name="star"></ion-icon></li>
+                        <li><ion-icon name="star"></ion-icon></li>
+                        <li><ion-icon name="star"></ion-icon></li>
+                        <li><ion-icon name="star-half"></ion-icon></li>
+                        <li>3.9</li>
+                    </ul>
+                    <p class="buy mb-0">Buy at ₹799 save ₹102</p>
+                    <p class="free">Free delivery</p>
+                </div>
+                <div class="cart-size">
+                    <h3 class="h4">S</h3>
+                    <p>(length: 48in)</p>
+                </div>
+                <div class="circle" style="background: linear-gradient(40deg, gold, rgb(20, 20, 20));"></div>
+                <div class="cart-price">
+                    <p class="old mb-0">₹601 </p>
+                    <p class="new mb-0">₹599</p>
+                    <p class="offer">(9% off)</p>
+                </div>
+                <button type="button" class="delete pt-0">
+                    <ion-icon name="trash"></ion-icon>
+                </button>
+            </div>
+            <div class="checkout-container">
+                <a class="checkout-button" href="checkout.html">Checkout</a></button>
+                <a class="checkout-button" href="index.html">Continue shopping</a></button>
+            </div>
+        </div>
+        
+
+    </div>
+    <div class="index-footer">
+        <div class="contact-two">
+            <div class="contact-icons">
+                <ul style="color: black;">
+                    <li><ion-icon name="logo-instagram"></ion-icon></li>
+                    <li><ion-icon name="logo-facebook"></ion-icon></li>
+                    <li><ion-icon name="logo-twitter"></ion-icon></li>
+                    <li><ion-icon name="logo-pinterest"></ion-icon></li>
+                </ul>
+            </div>
+            <div class="contact-down">
+                <div class="font-segoe UI">
+                    <h4 class="mb-0" style="font-size: 16px;font-weight: bold;color: black;">BRIGHTEN UP YOUR INBOX</h4>
+                    <p class="mb-0">Join us for new product releases, endless inspiration and <strong
+                            style="color: black;">10% off</strong> on your next
+                        order.
+                    </p>
+                    <footer>@copyrights 2025</footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
