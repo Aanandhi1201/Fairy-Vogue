@@ -813,6 +813,7 @@ tbody tr:hover{
         display: block;
         width: 100%;
         position: fixed;
+        
     }
     .mob-nav header{
         width: 100%;
@@ -824,6 +825,7 @@ tbody tr:hover{
         left: 0;
         right: 0;
         z-index: 9999;
+        box-shadow: 0px 6px 18px rgba(118, 51, 155, 0.6);
     }
     .mob-nav header h1{
         padding: 10px;
@@ -860,5 +862,6 @@ tbody tr:hover{
         background-color: transparent !important;
     }
 }
+
 
 
