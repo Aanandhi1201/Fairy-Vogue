@@ -757,6 +757,9 @@ tbody tr:hover{
     }
     .checkout-container{
         display: flex;
+        font-size: small;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     .checkout-button{
         height: fit-content;
@@ -783,6 +786,10 @@ tbody tr:hover{
     .buy-table1{
         width: 100%;
         overflow-x: auto;
+    }
+    .buy-amount img{
+        width:100px;
+        height: 100px;
     }
     strong{
         font-weight: bold;
@@ -853,4 +860,5 @@ tbody tr:hover{
         background-color: transparent !important;
     }
 }
+
 
